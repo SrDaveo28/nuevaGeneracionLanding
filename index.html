@@ -16,6 +16,9 @@
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
+    
+
+
     <title>Document</title>
 </head>
 
@@ -53,20 +56,25 @@
         <section class="home" id="home">
             <div class="home__container bd-container bd-grid">
                 <div class="home__data">
-                    <span class="home__greeting">Hola, nosotros somos</span>
-                    <h1 class="home__name">Nueva Generación</h1>
-                    <span class="home__profession">Formando Nuevos Lideres</span>
-                    <a href="#" class="button button-light">Conozca Más</a>
+                    <!-- <span class="home__greeting">Hola, nosotros somos</span> -->
+                    <div class="home__name">
+                            <img class="img__headerMain" src="assets/img/LOGO-NUEVA-GENARACION.png" alt="">
+                       
+                        <span class="home__profession">Formando Nuevos Lideres</span>
 
-                    <div class="home__social">
+                    </div>
+                    <!--  -->
+                    <a href="#about" class="button button-light">Conozca Más</a>
+
+                    <!-- <div class="home__social">
                         <a href="#" class="home__social-icon"><i class='bx bxl-facebook-circle'></i></a>
                         <a href="#" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
                         <a href="#" class="home__social-icon"><i class='bx bxl-twitter'></i></a>
-                    </div>
+                    </div> -->
 
-                    <div class="home__img">
+                    <!-- <div class="home__img">
                         <img src="assets/img/LOGO-NUEVA-GENARACION.png" alt="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -76,7 +84,7 @@
             <span class="section-subtitle">Nosotros</span>
             <h2 class="section-title">¿Quienes somos?</h2>
 
-            <div class="about__container db-grid">
+            <div class="about__container bd-grid">
                 <div class="about__data bd-grid">
                     <p class="about__description"><span>Lorem ipsum <br> </span> Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Autem quo beatae nisi nostrum et consequuntur aliquid. Labore vitae quasi
@@ -426,14 +434,78 @@
             <div class="contact__container bd-grid">
                 <div class="contact__content bd-grid">
                     <div class="contact__box">
-                        <i class='bx bx-home'></i>
-                        <h3 class="contact__title">Localidad</h3>
+                        <i class='bx bx-home contact__icon'></i>
+                        <h3 class="contact__title">Dirección</h3>
                         <span class="contact__description">#123 CDE- Paraguay</span>
                     </div>
                 </div>
+
+                <div class="contact__content bd-grid">
+                    <div class="contact__box">
+                        <i class='bx bx-phone contact__icon'></i>
+                        <h3 class="contact__title">Telefono</h3>
+                        <span class="contact__description">(+595) 123-456</span>
+                    </div>
+                </div>
+
+                <div class="contact__content bd-grid">
+                    <div class="contact__box">
+                        <i class='bx bx-envelope contact__icon'></i>
+                        <h3 class="contact__title">E-mail</h3>
+                        <span class="contact__description">nuevagen@gmail.com</span>
+                    </div>
+                </div>
+
+
+                <div class="contact__content bd-grid">
+                    <div class="contact__box">
+                        <i class='bx bx-chat contact__icon'></i>
+                        <h3 class="contact__title">Chat</h3>
+
+                        <div>
+                            <a href="#" class="contact__social"><i class='bx bxl-whatsapp'></i></a>
+                            <a href="#" class="contact__social"><i class='bx bxl-messenger'></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Nombre" class="contact__input">
+                        <input type="email" placeholder="Correo" class="contact__input">
+                    </div>
+
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Project" class="contact__input">
+                        <input type="number" placeholder="Correo" class="contact__input">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="7" placeholder="Mensaje" class="contact__input"></textarea>
+
+                    <input type="submit" value="Enviar Mensaje" class="button contact__button">
+                </form>
             </div>
         </section>
+
+
     </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__container bd-container">
+            <h1 class="footer__title">Nueva Generación</h1>
+            <p class="footer__description">Lorem ipsum dolor sit amet consectetur</p>
+
+            <div class="footer__social">
+                <a href="#" class="footer__link"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-instagram'></i></a>
+            </div>
+
+            <p class="footer__copy">&#169; 2021 MDSSoft. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
 
 
     <!-- mixitup filter -->
@@ -443,7 +515,9 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!-- gsap -->
-    <script src=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>
