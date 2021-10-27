@@ -38,11 +38,11 @@ function scrollActive() {
 
         sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop &&scrollY <= sectionTop + sectionHeight) {
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
 
         } else {
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')  
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
 }
@@ -53,7 +53,7 @@ window.addEventListener('scroll', scrollActive)
 
 function scrollHeader() {
     const header = document.getElementById('header')
-    if(this.scrollY >= 200) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    if (this.scrollY >= 200) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 
 window.addEventListener('scroll', scrollHeader)
@@ -63,7 +63,29 @@ window.addEventListener('scroll', scrollHeader)
 
 function scrollTop() {
     const scrolltop = document.getElementById('scroll-top')
-    if(this.scrollY >= 560) scrolltop.classList.add('show-scroll'); else scrolltop.classList.remove('show-scroll')
+    if (this.scrollY >= 560) scrolltop.classList.add('show-scroll'); else scrolltop.classList.remove('show-scroll')
 }
 
 window.addEventListener('scroll', scrollTop)
+
+/* mixitup filter galeria */
+const mixer = mixitup('.portfolio__container', {
+    selectors: {
+        target: '.porfolio__content'
+    },
+    animation: {
+        duration: 400
+    }
+});
+
+/* link active galeria */
+const linkPortfolio = document.querySelectorAll('.portfolio__item');
+
+function activePortfolio() {
+    if (linkPortfolio) {
+        linkPortfolio.forEach(link => link.classList.remove('active-portfolio'))
+        this.classList.add('active-portfolio');
+    }
+}
+
+linkPortfolio.forEach(link => link.addEventListener('click', activePortfolio))
