@@ -112,6 +112,10 @@ img {
     padding: 4rem 0 2rem;
 }
 
+.span__mision {
+    color: #C22329 !important;
+}
+
 .section-title,
 .section-subtitle {
     text-align: center;
@@ -119,7 +123,7 @@ img {
 
 .section-title {
     font-size: var(--h1-font-size);
-    color: var(--first-color);
+    color: #C22329;
     margin-bottom: var(--mb-3);
 }
 
@@ -487,12 +491,13 @@ img {
 .services__icon,
 .services__title {
     margin-bottom: var(--mb-2);
-    color: var(--first-color);
+    color: #C22329;
 
 }
 
 .services__icon {
     font-size: 3rem;
+    color: #f12d33 !important;
 }
 
 .services__title {
@@ -501,6 +506,7 @@ img {
 
 .services__description {
     margin-bottom: var(--mb-4);
+    
 }
 
 .services__data:hover {
@@ -823,7 +829,8 @@ img {
     }
 
     .about__description {
-        text-align: initial;
+        text-align: justify;
+        color: rgb(26, 24, 24);
     }
 
     .about__img {
